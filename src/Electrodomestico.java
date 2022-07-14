@@ -101,7 +101,7 @@ public class Electrodomestico {
 		}
 		
 	
-		if(peso<=0 && peso<19) {
+		if(peso>=0 && peso<19) {
 			plus+=10;
 		}else if(peso<49) {
 			plus+=50;
@@ -115,9 +115,13 @@ public class Electrodomestico {
 	}
 	
 	@Override
-	public String toString() {
-		return "\nDatos del electrodomestico\n " + "\n Precio " + this.precioBase + "\n Color: " + this.color
-				+ "\n Consumo energetico: " + this.consumoEnergetico + "\n Peso: " + this.peso + "\n";
+	public String toString() {	
+		return "\nDatos del electrodomestico\n "
+				+"\n Precio "+this.precioBase
+				+"\n Color: "+this.color
+				+"\n Consumo energetico: "+this.consumoEnergetico
+				+"\n Peso: "+this.peso
+				+"\n";		
 	}
 
 }
