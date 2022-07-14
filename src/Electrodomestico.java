@@ -73,6 +73,7 @@ public class Electrodomestico {
 			this.color = COLOR_DEFECTO;
 		}
 	}
+<<<<<<< HEAD
 
 	public double precioFinal() {
 
@@ -113,6 +114,49 @@ public class Electrodomestico {
 
 	}
 
+=======
+	
+	public double precioFinal(){
+		
+		double plus=0;
+		
+		switch(consumoEnergetico.toString()){
+			case "A":
+				plus+=100;
+				break;
+			case "B":
+				plus+=80;
+				break;
+			case "C":
+				plus+=60;
+				break;
+			case "D":
+				plus+=40;
+				break;
+			case "E":
+				plus+=30;  //hay errata, ponia 20 , ha de ser 30
+				break;
+			case "F":
+				plus+=10;
+				break;
+		}
+		
+	
+		if(peso<=0 && peso<19) {
+			plus+=10;
+		}else if(peso<49) {
+			plus+=50;
+		}else if(peso<79) {
+			plus+=80;
+		}else if(peso<80) {
+			plus+=100;}
+		
+		return precioBase+plus;
+	
+	}
+	
+	
+>>>>>>> b50b7756e6934bb69b4d110f434495fb62fc507b
 	@Override
 	public String toString() {
 		return "\nDatos del electrodomestico\n " + "\n Precio " + this.precioBase + "\n Color: " + this.color
