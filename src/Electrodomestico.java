@@ -1,8 +1,5 @@
 public class Electrodomestico {
 
-	//Color por defecto
-	//protected final static String color_def="blanco";
-	//Comentario random
 	
 	protected double precioBase;
 	protected Color color;
@@ -21,11 +18,17 @@ public class Electrodomestico {
 		this.peso = PESO_DEFECTO;
 	}
 	
-	public Electrodomestico(double precioBase, Color color, Consumo consumoEnergetico, double peso) {
-		super();
+	public Electrodomestico(double precio,double peso) { 
+		this.precioBase = precio;
+		this.color = COLOR_DEFECTO;
+		this.consumoEnergetico = CONSUMO_DEFECTO;
+		this.peso = peso;
+	}
+	
+	public Electrodomestico(double precioBase, Color color, Consumo consumoEnergetico, double peso) {		
 		this.precioBase = precioBase;
-		this.color = color;
-		this.consumoEnergetico = consumoEnergetico;
+		comprobarColor(color);
+		comprobarConsumoEnergetico(consumoEnergetico);
 		this.peso = peso;
 	}
 	
@@ -53,4 +56,33 @@ public class Electrodomestico {
 	public void setPeso(double peso) {
 		this.peso = peso;
 	}
+	
+	
+	private void comprobarConsumoEnergetico(Consumo letra) {
+		boolean correct = false;
+		for(Consumo con : Consumo.values()) {
+            if(con == letra) {
+            	this.consumoEnergetico = con;
+            	correct = true;
+            }
+        }		
+		if(!correct) {			
+        	this.consumoEnergetico = CONSUMO_DEFECTO;
+        }
+	}
+	
+	private void comprobarColor(Color color) {
+		boolean correct = false;
+		for(Color c: Color.values()) {
+			if(c == color){
+				this.color = c;
+				correct = true;
+			}
+		}
+		if(!correct) {
+			this.color = COLOR_DEFECTO;
+		}		
+	}
+	
+	
 }
