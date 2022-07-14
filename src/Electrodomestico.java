@@ -84,5 +84,15 @@ public class Electrodomestico {
 		}		
 	}
 	
+	@Override
+	public String toString() {	
+		return "\nDatos del electrodomestico\n "
+				+"\n Precio "+this.precioBase
+				+"\n Color: "+this.color
+				+"\n Consumo energetico: "+this.consumoEnergetico
+				+"\n Peso: "+this.peso
+				+"\n";		
+	}	
+	
 	
 }
