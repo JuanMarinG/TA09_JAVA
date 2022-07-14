@@ -1,8 +1,5 @@
 public class Electrodomestico {
-
-	//Color por defecto
-	//protected final static String color_def="blanco";
-	//Comentario random
+	
 	
 	protected double precioBase;
 	protected Color color;
@@ -53,4 +50,46 @@ public class Electrodomestico {
 	public void setPeso(double peso) {
 		this.peso = peso;
 	}
+
+
+
+	public double precioFinal(){
+		double plus=0;
+		switch(consumoEnergetico.toString()){
+		case "A":
+			plus+=100;
+			break;
+		case "B":
+			plus+=80;
+			break;
+		case "C":
+			plus+=60;
+			break;
+		case "D":
+			plus+=40;
+			break;
+		case "E":
+			plus+=20;
+			break;
+		case "F":
+			plus+=10;
+			break;
+	}
+		
+	
+		if(peso<=0 && peso<19) {
+			plus+=10;}
+		if(peso<=20 && peso<49) {
+			plus+=50;}
+		if(peso<=50 && peso<79) {
+			plus+=80;}
+		if( peso<80) {
+			plus+=100;}
+		
+		return precioBase+plus;
+	
+	}
 }
+
+
+
