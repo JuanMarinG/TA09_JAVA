@@ -73,7 +73,8 @@ public class Electrodomestico {
 			this.color = COLOR_DEFECTO;
 		}
 	}
-
+	
+	
 	public double precioFinal(){
 		
 		double plus=0;
