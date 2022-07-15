@@ -11,31 +11,23 @@ public class Raices {
 	}
 	
 	public double getDiscriminate() {
-		return (double)(b*b-4*a*c);
+		return ((double)(b*b)-4*a*c);
 	}
 	
 	public boolean tieneRaices() {
-		if(getDiscriminate() > 0)
-			return true;
-		else
-			return false;
+		return getDiscriminate()>0;
 	}
 	
 	public boolean tieneRaiz() {
-		if(getDiscriminate() == 0)
-			return true;
-		else
-			return false;
+		return getDiscriminate()==0;
 	}
-	
+
 	public void calcular() {
 		if(tieneRaices()) {
-			System.out.println("Tiene dos soluciones:");
 			obtenerRaices();
-		} else if(tieneRaiz()) {
-			System.out.println("Tiene una solución:");
+		}else if(tieneRaiz()) {
 			obtenerRaiz();
-		} else {
+		}else {
 			System.out.println("No tiene solución real");
 		}
 	}
@@ -46,7 +38,7 @@ public class Raices {
 	}
 	
 	public void obtenerRaiz() {
-		System.out.println(-(double)b / (2 * a));  
+		System.out.println(-(double)b / (2 * a));
 	}
 
 }
