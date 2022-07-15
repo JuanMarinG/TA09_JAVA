@@ -9,8 +9,8 @@ public class Estudiante extends Persona{
 		this.nota=0;
 	}
 	
-	public Estudiante(String nombre,int edad,String genero,int nota) {
-		super(nombre,edad,genero);
+	public Estudiante(String nombre,int edad,Sexo sexo,int nota) {
+		super(nombre,edad,sexo);
 		this.nota = nota;
 	}
 

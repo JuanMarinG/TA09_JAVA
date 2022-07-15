@@ -4,18 +4,18 @@ public abstract class Persona {
 
 	protected String nombre;
 	protected int edad;
-	protected String genero;	
+	protected Sexo sexo;	
 	
 	public Persona() {
 		this.nombre = "";
 		this.edad = 0;
-		this.genero = "";
+		this.sexo = null;
 	}
 	
-	public Persona(String nombre,int edad,String genero) {
+	public Persona(String nombre,int edad,Sexo sexo) {
 		this.nombre = nombre;
 		this.edad = edad;
-		this.genero = genero;
+		this.sexo = sexo;
 	}
 
 	public String getNombre() {
@@ -33,15 +33,15 @@ public abstract class Persona {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-
-	public String getGenero() {
-		return genero;
-	}
-
-	public void setGenero(String genero) {
-		this.genero = genero;
-	}
 	
+	public Sexo getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(Sexo sexo) {
+		this.sexo = sexo;
+	}
+
 	public abstract void faltaAssistencia();
 	
 }

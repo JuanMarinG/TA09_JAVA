@@ -42,7 +42,7 @@ public class Aula {
 		}
 	}
 	
-	private int getNumAlumnos() {
+	private int getNumEstudiantes() {
 		int n = 0;
 
 		for(Estudiante e : estudiantes) {
