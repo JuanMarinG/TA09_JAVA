@@ -1,6 +1,5 @@
 package ex05;
 
-<<<<<<< HEAD
 public class Profesor extends Persona{
 	
 	private Materia materia;
@@ -21,9 +20,4 @@ public class Profesor extends Persona{
 		
 	}
 	
-	
-=======
-public class Profesor {
->>>>>>> 5e2e89e3de8a8ab85a6f4ddb53a42dc8e7d4daa8
-
 }
