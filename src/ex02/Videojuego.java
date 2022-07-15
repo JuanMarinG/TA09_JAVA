@@ -7,7 +7,7 @@ public class Videojuego {
 	private int horas;
 	private boolean entregado;
 	private String genero;
-	private String compañia;
+	private String compania;
 
 	// Constantes
 
@@ -20,7 +20,7 @@ public class Videojuego {
 		this.horas = HORAS;
 		this.entregado = false;
 		this.genero = "";
-		this.compañia = "";
+		this.compania = "";
 	}
 
 	public Videojuego(String titulo, int horas) {
@@ -33,7 +33,7 @@ public class Videojuego {
 		this.titulo = titulo;
 		this.horas = horas;
 		this.genero = genero;
-		this.compañia = compañia;
+		this.compania = compañia;
 	}
 
 	// Metodos
@@ -62,18 +62,18 @@ public class Videojuego {
 		this.genero = genero;
 	}
 
-	public String getCompañia() {
-		return compañia;
+	public String getCompania() {
+		return compania;
 	}
 
-	public void setCompañia(String compañia) {
-		this.compañia = compañia;
+	public void setCompania(String compañia) {
+		this.compania = compania;
 	}
 
 	@Override
 	public String toString() {
 		return "Videojuego [titulo=" + titulo + ", horas=" + horas + ", entregado=" + entregado + ", genero=" + genero
-				+ ", compañia=" + compañia + "]";
+				+ ", compañia=" + compania + "]";
 	}
 
 	public void entregar() {

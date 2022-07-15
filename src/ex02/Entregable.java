@@ -9,27 +9,7 @@ public interface Entregable {
 	public boolean isEntregado(); //public boolean isEntregado(){	return delivered;}
 	
 	public int compareTo(Object a); 
-	/**
 
-		implementacion metodo class videojuego
-		public int compareTo(Object v) {
-			Videojuego game = (Videojuego)v;
-			int masHoras;
-	
-			if (this.horasEstimadas > game.getHorasEstimadas()) {
-				masHoras = -1;
-			}else if (this.horasEstimadas < game.getHorasEstimadas()) {
-				masHoras = 1;
-			}else {
-				masHoras = 0;
-			}
-	
-			return masHoras;
-		}
-	 *  
-	 *  
-	 *  
-	 */
 	
 	
 	
