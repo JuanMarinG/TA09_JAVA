@@ -10,6 +10,6 @@ public class MainApp {
 		System.out.println(libro2.toString());
 
 		Libro.sumPag(libro1, libro2); //Llamamos a metodo sumaLibros dentro de la clase Libro para que nos muestre el total de paginas
-
+		
 	}
 }

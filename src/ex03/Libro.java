@@ -60,7 +60,7 @@ public class Libro {
 		} else {
 			System.out.println("Ambos libros tiene las mismas paginas");
 		}
-
+		
 	}
 	
 }
