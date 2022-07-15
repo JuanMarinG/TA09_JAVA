@@ -25,15 +25,15 @@ public class Videojuego {
 
 	public Videojuego(String titulo, int horas) {
 		this.titulo = titulo;
-		this.horas = HORAS;
+		this.horas = horas;
 	}
 
-	public Videojuego(String titulo, int horas, String genero, String compañia) {
+	public Videojuego(String titulo, int horas, String genero, String compania) {
 		super();
 		this.titulo = titulo;
 		this.horas = horas;
 		this.genero = genero;
-		this.compania = compañia;
+		this.compania = compania;
 	}
 
 	// Metodos
@@ -66,7 +66,7 @@ public class Videojuego {
 		return compania;
 	}
 
-	public void setCompania(String compañia) {
+	public void setCompania(String compania) {
 		this.compania = compania;
 	}
 
