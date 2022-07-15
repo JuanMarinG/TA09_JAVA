@@ -48,8 +48,27 @@ public class Libro {
 		return "El libro "+title+" con ISBN "+ISBN+" creado por "+author+" tiene "+ numPags + " paginas";
 	}
 	
+	public static void sumPag(Libro libro1, Libro libro2) {
+		
+		int numPagLibro1 = libro1.getNumPags();
+		int numPagLibro2 = libro2.getNumPags();
+		
+		if(numPagLibro1<numPagLibro2) {
+			System.out.println("El libro "+libro2.getTitle()+" tiene mas paginas");	
+		}else if(numPagLibro1>numPagLibro2){
+			System.out.println("El libro "+libro1.getTitle()+" tiene mas paginas");
+		} else {
+			System.out.println("Ambos libros tiene las mismas paginas");
+		}
+
+	}
+	
+}
+
+
+		
 	
 	
 	
 
-}
+
