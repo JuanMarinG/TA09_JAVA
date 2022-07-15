@@ -11,7 +11,7 @@ public class Raices {
 	}
 	
 	public double getDiscriminate() {
-		
+		// joana
 	}
 	
 	public boolean tieneRaices() {
@@ -21,16 +21,17 @@ public class Raices {
 	public boolean tieneRaiz() {
 		return getDiscriminante()==0;
 	}
-	
+
 	public void calcular() {
-		
+		// joana
 	}
 	
 	public void obtenerRaices() {
-		
+		// arnau
 	}
 	
 	public void obtenerRaiz() {
+		// arnau
 	}
 
 }
