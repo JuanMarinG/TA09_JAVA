@@ -7,14 +7,15 @@ public class Estudiante extends Persona{
 	public Estudiante() {
 		super();
 		this.nota=0;
+		asistencia();
 	}
 	
 	public Estudiante(String nombre,int edad,Sexo sexo,int nota) {
 		super(nombre,edad,sexo);
 		this.nota = nota;
+		asistencia();
 	}
 		
-
 	public int getNota() {
 		return nota;
 	}
@@ -23,12 +24,19 @@ public class Estudiante extends Persona{
 		this.nota = nota;
 	}
 
-	public boolean asistencia() {
-		//estudiante puede hacer un 50% de novillos, 
-		//hara falta saber cuantas clases en total va a haber
-		//ha de quedar registrado en el aula
-		
-		return false;		
+	public void asistencia() {
+		// random num 0 a 10
+		int n = new java.util.Random().nextInt(10);
+		// 50% 50%, lo simulamos con pares e impares hasta 10
+		if (n%2==0) presente = true;	
 	}
+
+	@Override
+	public String toString() {
+		return "Estudiante [nota=" + nota + ", nombre=" + nombre + ", edad=" + edad + ", sexo=" + sexo + ", presente="
+				+ presente + "]";
+	}
+	
+	
 
 }

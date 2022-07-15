@@ -47,10 +47,12 @@ public abstract class Persona {
 		return presente;
 	}
 
-	public void setPresente(boolean presente) {
-		this.presente = presente;
-	}
+	public abstract void asistencia();
 
-	public abstract boolean asistencia();
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", sexo=" + sexo + ", presente=" + presente + "]";
+	}
+	
 	
 }
