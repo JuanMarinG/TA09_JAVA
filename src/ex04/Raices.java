@@ -15,11 +15,11 @@ public class Raices {
 	}
 	
 	public boolean tieneRaices() {
-		
+		return getDiscriminante()>0;
 	}
 	
 	public boolean tieneRaiz() {
-		
+		return getDiscriminante()==0;
 	}
 	
 	public void calcular() {
