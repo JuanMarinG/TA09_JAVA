@@ -13,6 +13,15 @@ public class Estudiante extends Persona{
 		super(nombre,edad,sexo);
 		this.nota = nota;
 	}
+		
+
+	public int getNota() {
+		return nota;
+	}
+
+	public void setNota(int nota) {
+		this.nota = nota;
+	}
 
 	@Override
 	public void faltaAssistencia() {

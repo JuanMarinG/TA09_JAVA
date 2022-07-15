@@ -20,5 +20,13 @@ public class Profesor extends Persona{
 		// TODO Auto-generated method stub
 		
 	}
+
+	public Materia getMateria() {
+		return materia;
+	}
+
+	public void setMateria(Materia materia) {
+		this.materia = materia;
+	}
 	
 }
