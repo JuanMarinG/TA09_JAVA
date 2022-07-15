@@ -28,7 +28,7 @@ public class Raices {
 		}else if(tieneRaiz()) {
 			obtenerRaiz();
 		}else {
-			System.out.println("No tiene solucion real");
+			System.out.println("No tiene solución real");
 		}
 	}
 	
