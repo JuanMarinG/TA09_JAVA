@@ -25,19 +25,19 @@ public class Aula {
 			return;
 		}
 		if(getNumEstudiantes() <= nEstudiantes/2) {
-			System.out.println("No se puede dar clase. Se necesitan más de la mitad de alumnos.");
+			System.out.println("No se puede dar clase. Se necesitan mï¿½s de la mitad de alumnos.");
 			return;
 		}
 
 		System.out.println("--- HOMBRES APROBADOS ---");
 		for(Estudiante e : estudiantes) {
-			if (e.getCalificación() >= 5 && e.getSexo() == Sexo.HOMBRE)
+			if (e.getNota() >= 5 && e.getSexo() == Sexo.HOMBRE)
 				System.out.println(e.toString());
 		}
 		
 		System.out.println("--- MUJERES APROBADAS ---");
 		for(Estudiante e : estudiantes) {
-			if (e.getCalificación() >= 5 && e.getSexo() == Sexo.MUJER)
+			if (e.getNota() >= 5 && e.getSexo() == Sexo.MUJER)
 				System.out.println(e.toString());
 		}
 	}
@@ -46,7 +46,7 @@ public class Aula {
 		int n = 0;
 
 		for(Estudiante e : estudiantes) {
-			if(e.getAsistencia())
+			if(e.isPresente())
 				n++;
 		}
 		return n;
