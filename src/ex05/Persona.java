@@ -42,6 +42,6 @@ public abstract class Persona {
 		this.sexo = sexo;
 	}
 
-	public abstract void faltaAssistencia();
+	public abstract boolean isPresente();
 	
 }
