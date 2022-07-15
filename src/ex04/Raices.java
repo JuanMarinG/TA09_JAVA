@@ -27,11 +27,12 @@ public class Raices {
 	}
 	
 	public void obtenerRaices() {
-		// arnau
+		double d = getDiscriminate();
+		System.out.println((double)(-b + Math.sqrt(d)) / (2 * a) + "\n"+ (double)(-b - Math.sqrt(d)) / (2 * a)); 
 	}
 	
 	public void obtenerRaiz() {
-		// arnau
+		System.out.println(-(double)b / (2 * a));
 	}
 
 }
