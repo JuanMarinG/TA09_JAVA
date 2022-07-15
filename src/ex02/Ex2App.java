@@ -6,10 +6,10 @@ public class Ex2App {
 
 		Serie series[] = { 
 				new Serie("Plats Bruts", 2, "Comedia", "Oriol"), 
-				new Serie("Curro Jim�nez", 3, "Aventuras", "Juan"),
+				new Serie("Curro Jimenez", 3, "Aventuras", "Juan"),
 				new Serie("Bob el manetes", 4, "Infantil", "Arnau"),
-				new Serie("Winx Club", 4, "Ficci�n", "Ionela"),
-				new Serie("Sissi Emperatriz", 2, "Cine hist�rico", "Joana")
+				new Serie("Winx Club", 4, "Ficcion", "Ionela"),
+				new Serie("Sissi Emperatriz", 2, "Cine historico", "Joana")
 			};
 
 		Videojuego[] videojuegos = { 
@@ -36,7 +36,7 @@ public class Ex2App {
 			
 			if(maxHoras == null) maxHoras = v;
 			
-			if(v.compareTo(maxHoras) == 1) maxHoras = v;
+			if(v.compareTo(maxHoras) == -1) maxHoras = v;
 		}
 				
 		for (Serie s : series) {
@@ -44,11 +44,14 @@ public class Ex2App {
 			
 			if(maxTemp == null) maxTemp = s;
 			
-			if(s.compareTo(maxTemp) == 1) maxTemp = s;
+			if(s.compareTo(maxTemp) == -1) maxTemp = s;
 		}
 		
-		System.out.println("Videojuego con m�s horas jugadas:\n"+maxHoras.toString());		
-		System.out.println("Serie con m�s temporadas:\n"+maxTemp.toString());
+		System.out.println("Videojuegos entregados:"+jocsEntr);
+		System.out.println(maxHoras.toString()+"\n");	
+		
+		System.out.println("Series entregadas:"+seriesEntr);
+		System.out.println(maxTemp.toString());
 	}
 
 }
