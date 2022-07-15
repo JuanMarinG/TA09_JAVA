@@ -10,29 +10,10 @@ public interface Entregable {
 	
 	public int compareTo(Object a); 
 	/**
-	 *  compara las horas estimadas en los videojuegos
-	 *  compara el num de temporadas. 
-	 *  
-	 *  //implementacion metodo class serie
-	 *  public int compareTo(Object s) {  
-			Serie serie = (Serie)s;
-			int masTemporadas;
-	
-			if (this.numSeasons > serie.getNumSeasons()) {
-				masTemporadas = -1;
-			}else if (this.numSeasons < serie.getNumSeasons()) {
-				masTemporadas = 1;
-			}else {
-				masTemporadas = 0;
-			}
-	
-			return masTemporadas;
-	}
-		
-		
+
 		implementacion metodo class videojuego
 		public int compareTo(Object v) {
-			Videojuego game = (Videojuego)s;
+			Videojuego game = (Videojuego)v;
 			int masHoras;
 	
 			if (this.horasEstimadas > game.getHorasEstimadas()) {
