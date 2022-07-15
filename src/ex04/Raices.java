@@ -11,19 +11,25 @@ public class Raices {
 	}
 	
 	public double getDiscriminate() {
-		// joana
+		return ((double)(b*b)-4*a*c);
 	}
 	
 	public boolean tieneRaices() {
-		return getDiscriminante()>0;
+		return getDiscriminate()>0;
 	}
 	
 	public boolean tieneRaiz() {
-		return getDiscriminante()==0;
+		return getDiscriminate()==0;
 	}
 
 	public void calcular() {
-		// joana
+		if(tieneRaices()) {
+			obtenerRaices();
+		}else if(tieneRaiz()) {
+			obtenerRaiz();
+		}else {
+			System.out.println("No tiene solucion real");
+		}
 	}
 	
 	public void obtenerRaices() {
