@@ -1,3 +1,4 @@
+package ex01;
 public class Lavadora extends Electrodomestico{
 	
 	private final int CARGA_DEFECTO = 5;
