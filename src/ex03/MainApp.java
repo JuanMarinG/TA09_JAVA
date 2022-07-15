@@ -1,6 +1,7 @@
 package ex03;
 
 public class MainApp {
+<<<<<<< HEAD
 	
 	public static void main(String[] args) {
 		
@@ -20,3 +21,7 @@ public class MainApp {
 		}
 	}
 }
+=======
+
+}
+>>>>>>> 634827a3fb57c94cfc1de575af19e6b655b9f957
