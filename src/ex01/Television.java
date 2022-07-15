@@ -1,3 +1,4 @@
+package ex01;
 public class Television extends Electrodomestico {
 
 	private double resolucion;
