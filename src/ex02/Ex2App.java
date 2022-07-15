@@ -36,7 +36,7 @@ public class Ex2App {
 			
 			if(maxHoras == null) maxHoras = v;
 			
-			if(v.getHoras() > maxHores.getHoras()) maxHores = v;
+			if(v.compareTo(maxHoras) == 1) maxHores = v;
 		}
 				
 		for (Serie s : series) {
@@ -44,7 +44,7 @@ public class Ex2App {
 			
 			if(maxTemp == null) maxTemp = s;
 			
-			if(s.getTemporadas() > maxTemp.getTemporadas()) maxTemp = s;
+			if(s.compareTo(maxTemp) == 1) maxTemp = s;
 		}
 		
 		System.out.println("Videojuego con más horas jugadas:\n"+maxHoras.toString());		
