@@ -1,7 +1,6 @@
 package ex03;
 
 public class MainApp {
-<<<<<<< HEAD
 	
 	public static void main(String[] args) {
 		
@@ -16,12 +15,14 @@ public class MainApp {
 		
 		if(numPagLibro1<numPagLibro2) {
 			System.out.println("El libro "+libro2.getTitle()+" tiene mas paginas");
-		}else {
+		}else if(numPagLibro1>numPagLibro2){
 			System.out.println("El libro "+libro1.getTitle()+" tiene mas paginas");
+		} else {
+			System.out.println("Ambos libros tiene las mismas páginas");
 		}
 	}
 }
-=======
 
-}
->>>>>>> 634827a3fb57c94cfc1de575af19e6b655b9f957
+
+
+
