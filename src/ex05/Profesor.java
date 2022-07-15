@@ -15,18 +15,19 @@ public class Profesor extends Persona{
 		this.materia = materia;
 	}
 
-	@Override
-	public void faltaAssistencia() {
-		// TODO Auto-generated method stub
-		
-	}
-
 	public Materia getMateria() {
 		return materia;
 	}
 
 	public void setMateria(Materia materia) {
 		this.materia = materia;
+	}
+	
+	public boolean asistencia() {
+		// TODO profesor puede hacer un 20% de "novillos"
+		//hara falta saber cuantas clases en total va a haber
+		
+		return false;
 	}
 	
 }

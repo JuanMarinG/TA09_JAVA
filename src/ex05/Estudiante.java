@@ -23,10 +23,12 @@ public class Estudiante extends Persona{
 		this.nota = nota;
 	}
 
-	@Override
-	public void faltaAssistencia() {
-		// TODO Auto-generated method stub
+	public boolean asistencia() {
+		//estudiante puede hacer un 50% de novillos, 
+		//hara falta saber cuantas clases en total va a haber
+		//ha de quedar registrado en el aula
 		
+		return false;		
 	}
 
 }

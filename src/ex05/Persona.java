@@ -4,7 +4,8 @@ public abstract class Persona {
 
 	protected String nombre;
 	protected int edad;
-	protected Sexo sexo;	
+	protected Sexo sexo;
+	protected boolean presente;
 	
 	public Persona() {
 		this.nombre = "";
@@ -41,7 +42,15 @@ public abstract class Persona {
 	public void setSexo(Sexo sexo) {
 		this.sexo = sexo;
 	}
+	
+	public boolean isPresente() {
+		return presente;
+	}
 
-	public abstract boolean isPresente();
+	public void setPresente(boolean presente) {
+		this.presente = presente;
+	}
+
+	public abstract boolean asistencia();
 	
 }

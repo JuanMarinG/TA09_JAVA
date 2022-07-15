@@ -20,7 +20,7 @@ public class Aula {
 			System.out.println("No se puede dar clase. El profesor no ha asistido.");
 			return;
 		}
-		if(materia != profesor.getMateria()) {
+		if(materia != profesor.getMateria()) { //si el profesor no esta (is Presente == false) entonces no hace falta mirar si da esa materia
 			System.out.println("No se puede dar clase. El profesor no imparte esta materia.");
 			return;
 		}
@@ -52,6 +52,7 @@ public class Aula {
 		return n;
 	}
 	
+	//donde se usaria el metodo asistencia que ha de calcular porcentaje de novilles de estudiante y profe?
 	
 
 }
