@@ -40,4 +40,11 @@ public class Espectador {
 		this.dinero = dinero;
 	}
 
+	@Override
+	public String toString() {
+		return "Espectador [nombre=" + nombre + ", edad=" + edad + ", dinero=" + dinero + "]";
+	}
+	
+	
+
 }
