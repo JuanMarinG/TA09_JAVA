@@ -1,5 +1,4 @@
 package ex06;
-
 import java.util.ArrayList;
 
 public class MainApp {
@@ -10,17 +9,29 @@ public class MainApp {
 		Pelicula pelicula = new Pelicula("Currito de la Cruz", 132, 3, "Rafael Gil");
 		Cine cine = new Cine(pelicula, 8.50);
 		
-		generarEspectadores();
+		
 		
 		cine.sentarEspectadores(espectadores);
 		cine.imprimirAsientosOcupados();
+	
 	}
-
 	// JUAN
-	private static void generarEspectadores() {
-		// Este metodo ha de crear espectadores y añadirlos a la lista espectadores
-		// Crear bucle (aleatorio entre 20 y 50, por ejemplo)
-		// En cada iteracion va a crear objecto Espectador y lo va a añadir a la lista
+	
+	// Este metodo ha de crear espectadores y aï¿½adirlos a la lista espectadores
+
+	public static String generarEspectadores(String nombre,int edad,double dinero) {
+	
+		Espectador espectador = new Espectador(
+		Espectador.generarNombreAleatorio(Espectador.generarNumeroAleatorio(1, 36)),
+		// Crear bucle (aleatorio entre 20 y 50, por ejemplo) //-----se crean dos bucles, tanto para generar tanto edad como dinero
+		Espectador.generarNumeroAleatorio(15, 60), //rango de edad
+		Espectador.generarNumeroAleatorio(20, 50));//rango de dinero
+	
+		espectador.generarEspectadores(espectadores);
+		// En cada iteracion va a crear objecto Espectador y lo va a sumar a la lista
 	}
+	
 
 }
+
+
