@@ -19,21 +19,10 @@ public class Ex5App {
 		listado [6]= new Estudiante ("Joana", 18, Sexo.MUJER, 8);
 		
 		//CREAMOS EL AULA Y MOSTRAR RESULTADOS
-       Aula aula1 = new Aula(001, 10, Materia.MATEMATICAS, profesor, listado);
+        Aula aula1 = new Aula(001, 9, Materia.MATEMATICAS, profesor, listado);
         
         if(aula1.puedeDarseClase()){
-        	System.out.println("--- HOMBRES APROBADOS ---");
-    		for(Estudiante e : listado) {
-    			if (e.getNota() >= 5 && e.getSexo() == Sexo.HOMBRE)
-    				System.out.println(e.toString());
-    		}
-    		
-    		System.out.println("--- MUJERES APROBADAS ---");
-    		for(Estudiante e : listado) {
-    			if (e.getNota() >= 5 && e.getSexo() == Sexo.MUJER)
-    				System.out.println(e.toString());
-    		}
-        
+        	aula1.mostrarAprobados();        
         }
         
     }

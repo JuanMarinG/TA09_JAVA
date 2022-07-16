@@ -44,6 +44,18 @@ public class Aula {
 	}
 	
 	
-	
+	public void mostrarAprobados() {
+		System.out.println("--- HOMBRES APROBADOS ---");
+		for(Estudiante e : estudiantes) {
+			if (e.getNota() >= 5 && e.getSexo() == Sexo.HOMBRE)
+				System.out.println(e.toString());
+		}
+		
+		System.out.println("--- MUJERES APROBADAS ---");
+		for(Estudiante e : estudiantes) {
+			if (e.getNota() >= 5 && e.getSexo() == Sexo.MUJER)
+				System.out.println(e.toString());  
+		}
+	}	
 
 }
