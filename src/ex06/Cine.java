@@ -1,5 +1,7 @@
 package ex06;
 
+import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.Hashtable;
 
 public class Cine {
@@ -55,6 +57,32 @@ public class Cine {
 
 	public void setAsientos(Hashtable<String, Boolean> asientos) {
 		this.asientos = asientos;
+	}
+	
+	public void sentarEspectadores(ArrayList<Espectador> espectadores) {
+        for(Espectador e : espectadores){
+            // Comprovar edad minima y dinero
+            if(e.getEdad() >= pelicula.getEdadMin() && e.getDinero() >= precio) {
+            	// Generar asiento aleatorio. Si esta ocupado, genera otro hasta que encuentre uno libre
+	            String asiento;
+	            do {
+		            asiento = "" + (int) ((Math.random() * (8 - 1)) + 1) + (char)(65+((int) ((Math.random() * (9 - 1)) + 1)));
+	            }while(!asientos.get(asiento));
+	            
+	            // Cambiar el estado del asiento a ocupado
+	            asientos.put(asiento, false);
+            }
+        }
+	}
+	
+	public void imprimirAsientosOcupados() {
+		Enumeration<String> e = asientos.keys();
+		 
+        while (e.hasMoreElements()) {
+            String key = e.nextElement();
+            if(!asientos.get(key))
+            	System.out.println(key);
+        }
 	}
 
 	

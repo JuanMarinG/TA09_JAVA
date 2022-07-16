@@ -4,19 +4,16 @@ import java.util.ArrayList;
 
 public class MainApp {
 	
-	ArrayList<Espectador> espectadores = new ArrayList<Espectador>();
+	static ArrayList<Espectador> espectadores = new ArrayList<Espectador>();
 
 	public static void main(String[] args) {
 		Pelicula pelicula = new Pelicula("Currito de la Cruz", 132, 3, "Rafael Gil");
 		Cine cine = new Cine(pelicula, 8.50);
 		
 		generarEspectadores();
-		sentarEspectadores(cine);
-	}
-
-	// ARNAU
-	private static void sentarEspectadores(Cine cine) {
-		// Este metodo va a sentar a los espectadores en un sitio
+		
+		cine.sentarEspectadores(espectadores);
+		cine.imprimirAsientosOcupados();
 	}
 
 	// JUAN
