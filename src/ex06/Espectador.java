@@ -60,12 +60,4 @@ public class Espectador {
 		return nombres[rand];
 	}
 	
-	public void bucleEspectador(int numero) {
-	    int n;
-	    do {
-	        n = (int) (Math.random() * 20);
-	        System.out.println(n);
-	    } while (n % 2 != 0);
-	}
-	
 }
