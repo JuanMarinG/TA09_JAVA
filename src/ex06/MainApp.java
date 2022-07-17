@@ -19,15 +19,20 @@ public class MainApp {
 	
 	// JUAN
 	// Este metodo ha de crear espectadores y anadirlos a la lista espectadores
+	
+	
+	
 	public static void generarEspectadores(){
 		// crear variable int y generar un aleatorio
-		// meter todo este código en un bucle, y recorrer tantas veces como diga el aleatorio
+		// meter todo este cï¿½digo en un bucle, y recorrer tantas veces como diga el aleatorio
+		for (int n = 20; n < 50; n++) {
 		Espectador espectador = new Espectador(
 				Espectador.generarNombreAleatorio(Espectador.generarNumeroAleatorio(1, 36)),
 				Espectador.generarNumeroAleatorio(15, 60), // rango de edad
 				Espectador.generarNumeroAleatorio(20, 50));// rango de dinero
-
+		
 		espectadores.add(espectador);
+		}
 	}
-
 }
+
