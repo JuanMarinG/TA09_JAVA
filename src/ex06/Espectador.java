@@ -1,13 +1,14 @@
 package ex06;
 
-import java.util.ArrayList;
-
 public class Espectador {
 	
 	
 	private String nombre;
 	private int edad;
 	private double dinero;
+	
+	public static String[] nombres = { "Joana", "Arnau", "Juan", "Josep", "Adria", "Barbara", "Clara", "Dani",
+			"David", "Ionela"};
 	
 	public Espectador() {
 		this("",0,0);
@@ -49,30 +50,14 @@ public class Espectador {
 	}
 
 	public static int generarNumeroAleatorio(int minimo, int maximo) {
-		
 	        int num = (int)(Math.random()*(minimo-(maximo+1))+(maximo+1));
 	        return num;
 	}
 	
-	public static String nombres []={"Joana", "Arnau", "Joan", "Josep", "Sara"};
-
-	
-
-	public static String[] generarNombreAleatorio(int cantidad) {
-		String[] nombresAleatorios = new String[cantidad];
-
-		String[] nombres = { "Joana", "Arnau", "Juan", "Josep", "Adria", "Barbara", "Clara", "Dani",
-				"David", "Ionela"};
+	public static String generarNombreAleatorio(int cantidad) {
+		int rand = (int) ((Math.random() * (9 - 0)) + 0);
 		
-		for (int i = 0; i < cantidad; i++) {
-			nombresAleatorios[i] = nombres[(int) (Math.floor(Math.random()*((nombres.length-1)-0+1)+0))];
-		}
-		return nombresAleatorios;
+		return nombres[rand];
 	}
 	
 }
-		
-	
-		
-	
-

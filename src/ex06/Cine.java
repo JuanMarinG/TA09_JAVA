@@ -79,6 +79,7 @@ public class Cine {
 	public void imprimirAsientosOcupados() {
 		Enumeration<String> e = asientos.keys();
 
+		System.out.println("\nAsientos ocupados:");
 		while (e.hasMoreElements()) {
 			String key = e.nextElement();
 			if (!asientos.get(key))
