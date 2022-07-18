@@ -24,9 +24,9 @@ public class Cine {
 	}
 
 	private void generarAsientos() {
-		// la key de cada registro del hashtable será la concatenación de fila y columna
-		// el valor será true por defecto, para indicar que el sitio está disponible
-		// accederemos a una posición así: cine.getAsientos().get("1A");
+		// la key de cada registro del hashtable serï¿½ la concatenaciï¿½n de fila y columna
+		// el valor serï¿½ true por defecto, para indicar que el sitio estï¿½ disponible
+		// accederemos a una posiciï¿½n asï¿½: cine.getAsientos().get("1A");
 		for (int i = 1; i <= FILAS; i++) {
 			for (int j = 0; j < COLUMNAS; j++) {
 				asientos.put("" + i + (char) (65 + j), true);
@@ -66,8 +66,8 @@ public class Cine {
 				// uno libre
 				String asiento;
 				do {
-					asiento = "" + (int) ((Math.random() * (8 - 1)) + 1)
-							+ (char) (65 + ((int) ((Math.random() * (9 - 1)) + 1)));
+					asiento = "" + (int) (Math.random() * FILAS + 1) //queremos que genere filas del 1 al 8 incluidos							
+							+ (char) (65 + ((int) ((Math.random() * (COLUMNAS - 0)) + 0)));  
 				} while (!asientos.get(asiento));
 
 				// Cambiar el estado del asiento a ocupado

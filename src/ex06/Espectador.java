@@ -46,17 +46,16 @@ public class Espectador {
 
 	@Override
 	public String toString() {
-		return "Espectador [nombre=" + nombre + ", edad=" + edad + ", dinero=" + dinero + "]";
+		return "\nEspectador [nombre=" + nombre + ", edad=" + edad + ", dinero=" + dinero + "]";
 	}
 
 	public static int generarNumeroAleatorio(int minimo, int maximo) {
-	        int num = (int)(Math.random()*(minimo-(maximo+1))+(maximo+1));
-	        return num;
+        int num = (int)(Math.random()*(minimo-(maximo+1))+(maximo+1));
+        return num;
 	}
 	
-	public static String generarNombreAleatorio(int cantidad) {
-		int rand = (int) ((Math.random() * (9 - 0)) + 0);
-		
+	public static String generarNombreAleatorio() { 
+		int rand = (int) (Math.random() * nombres.length);		
 		return nombres[rand];
 	}
 	
