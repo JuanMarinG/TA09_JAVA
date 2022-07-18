@@ -54,7 +54,7 @@ public class Espectador {
         return num;
 	}
 	
-	public static String generarNombreAleatorio() { //no hace falta parametro
+	public static String generarNombreAleatorio() { 
 		int rand = (int) (Math.random() * nombres.length);		
 		return nombres[rand];
 	}
