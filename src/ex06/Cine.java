@@ -68,7 +68,7 @@ public class Cine {
 				do {
 					asiento = "" + (int) (Math.random() * FILAS + 1) //queremos que genere filas del 1 al 8 incluidos
 							//no sestan generando con la letra A, no esta incluida
-							+ (char) (65 + ((int) ((Math.random() * (COLUMNAS - 1)) + 1)));  
+							+ (char) (65 + ((int) ((Math.random() * (COLUMNAS - 0)) + 0)));  
 				} while (!asientos.get(asiento));
 
 				// Cambiar el estado del asiento a ocupado
